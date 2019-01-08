@@ -1,3 +1,10 @@
 body {
   background: orange;
 }
+
+h1 {
+  background: green;
+}
+p {
+  background: rgba(130,9,255,.4);
+}  
