@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>1stdoc</title>
+</head>
+<body>
+  <h1>First doc</h1>
+
+  <p>Nous écrivons notre première page HTML.</p>
+
+  <h2>Premiers pas</h2>
+
+  <!-- je suis un commentaire -->
+
+  <!--
+  je suis
+  un commentaire
+  multiligne
+  -->
+
+  <p>
+    Je suis un paragraphe
+    sur plusieurs lignes.
+
+
+    Je comprends une ou plusieurs phrases.
+  </p>
+
+  <a href="https://gist.github.com/abernier/680ad3dd343636b137a73ca0f14fcbcf">Je suis un lien vers mon boilerplate github</a>  
+
+  <p>
+    <img src="http://via.placeholder.com/350x150" alt/>
+  </p>
+
+  <!-- lien image, ie: une balise image dans une balise lien -->
+  <a href="https://placeholder.com">
+    <img src="http://via.placeholder.com/100x200" alt="image placeholder">
+  </a>
+
+  <h2>On poursuit</h2>
+
+  Avec les listes...
+
+  <!-- ie: unordered-list -->
+  <ul>
+  <!--je peux très bien être vide-->
+  </ul>
+
+  <ul>
+    <li>item A</li>
+    <li>item B</li>
+    <li>item C</li>
+  </ul>
+
+  Et maintenant une liste ordonnée, ie: ordered-list :
+
+  <ol>
+    <li>item A</li>
+    <li>item B</li>
+    <li>item C</li>
+  </ol>
+
+  Et maintenant une sous-liste :
+
+  <h2>Ma liste de courses</h2>
+  <p>Pense a acheter:</p>
+  <ul>
+    <li>Tomates</li>
+    <li>sucre</li>
+  </ul>
+
+  <h2>Ma recette</h2>
+  <p>Faire dans l'ordre les étapes:</p>
+  <ol>
+    <li>
+      Battre les jaunes:
+      <ol>
+        <li>casser les oeufs</li>
+        <li>separer le blanc des jaunes</li>
+        <li>fouetter</li>
+      </ol>
+    </li>
+    <li>ajouter le sucre</li>
+  </ol>
+
+  Et maintenant un tableau:
+
+
+  <!-- ATTENTION: l'attribut `border` est déprécié !! (juste pour mieux le voir entre nous) -->
+  <table border>
+    <!-- ligne 0: pour l'entete du tableau -->
+    <tr>
+      <th>col A</th><th>col B</th><th>col C</th>
+    </tr>
+
+    <!-- ligne 1 -->
+    <tr>
+      <td>cellule 1.1</td><td>cellule 1.2</td><td>cellule 1.3</td>
+    </tr>
+    <!-- ligne 2 -->
+    <tr>
+      <td>cellule 2.1</td><td>cellule 2.2</td><td>cellule 2.3</td>
+    </tr>
+  </table>
+
+  <h2>Et toujours plus de balises...</h2>
+
+  En plus des listes ordonnées et non-ordonnées, nous avons avons également les listes de définition:
+  
+  Indiana Jones "les aventuriers de l'arche perdue":
+  <dl>
+    <dt>Sortie en salle</dt>
+    <dd>16 septembre 1981</dd>
+
+    <dt>Réalisé par</dt>
+    <dd>Steven Spielberg</dd>
+
+    <dt>Acteurs</dt>
+    <dd>Harrison Ford</dd>
+    <dd>Karen Allen</dd>
+    <dd>Paul Freeman</dd>
+  </dl>
+
+  Pour reprendre du contenu exterieur, comme par exemple, une citation:
+
+  <blockquote>
+  Le mieux est l'ennemi du bien
+  </blockquote>
+
+  <blockquote>
+    <p>Me souhaitez-vous le bonjour ou constatez-vous... ?</p>
+    — <cite>Bilbo le Hobbit</cite>
+  </blockquote>
+
+  La balise br pour sauter des lignes
+
+  <blockquote>
+    <p>
+      A grands plis sombres une ample tapisserie<br>
+      De haute lice, avec emphase descendrait<br>
+      Le long des quatre murs immenses d'un retrait<br>
+      Mystérieux où l'ombre au luxe se marie.
+    </p>
+    <p>
+      A grands plis sombres une ample tapisserie<br>
+      De haute lice, avec emphase descendrait<br>
+      Le long des quatre murs immenses d'un retrait<br>
+      Mystérieux où l'ombre au luxe se marie.
+    </p>
+  </blockquote>
+
+  la balise pre qui permet d'afficher du texte préformatté
+
+<pre>
++---------------------------------------+
+|                Results                |
++---------------------------------------+
+|             |        Contestant       |
++ Competition +-------------------------+
+|             |  John | Andrea | Robert |
++-------------+-------+--------+--------+
+| Swimming    |  1:30 |   2:05 |   1:15 |
++-------------+-------+--------+--------+
+| Running     | 15:30 |  14:10 |  15:45 |
++-------------+-------+--------+--------+
+</pre>
+
+ou meme de l'ascii-art:
+
+<pre>
+  |\_/|  
+ / @ @ \ 
+( > º < )
+ `>>x<<´ 
+ /  O  \ 
+</pre>
+
+et pour présenter du code :
+
+<pre><code>
+function square(x) {
+  return x*x;
+}</code></pre>
+
+Voici ton mot de passe: <code>1234</code>.
+
+<h2>Et en vrac</h2>
+
+- Les balises pour les emphases : em, strong, small : <em>particulier</em>, <strong>important</strong>, <small>discret</small>
+- Les balises indice et exposant, par ex: HTML<sup>5</sup> et H<sub>2</sub>O
+- La balise abbr pour les acronymes, par: <abbr title="HyperText Markup Language">HTML</abbr>
+- Nous aujourd'hui le <time datetime="2018-03-19">19 mars</time>
+
+- Les balises span et div: qui sont des balises génériques respectivement de type inline et block pour la div.
+
+
+<h2>Multimedia</h2>
+
+La balise video:
+
+<video src="http://media.w3.org/2010/05/sintel/trailer.mp4" controls muted loop>
+  <p>Désolé, votre navigateur ne supporte pas la video</p>
+</video>
+
+et en précisant plusieurs format vidéo:
+
+<video controls="controls" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
+  <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4'/>
+  <source src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm'/>
+  <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg'/>
+</video>
+
+Pour l'audio:
+
+<audio src="http://www.alexkatz.me/codepen/music/interlude.mp3" controls preload="none">
+  <p>Désolé, votre navigateur ne supporte pas l'audio</p>
+</audio>
+
+et avec différents formats :
+<audio controls="">
+  <source src="http://www.alexkatz.me/codepen/music/interlude.ogg" type="audio/ogg; codecs=vorbis"/>
+  <source src="http://www.alexkatz.me/codepen/music/interlude.mp3" type="audio/mpeg"/>
+  <p>Désolé, votre navigateur ne supporte pas l'audio</p>
+</audio>
+
+iframe Youtube:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZyFfrCpZah4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</body>
+</html>
