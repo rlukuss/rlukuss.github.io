@@ -1,0 +1,49 @@
+* {box-sizing:border-box;}
+
+body {
+  margin:0;
+  
+}
+
+#header {
+  height:100vh;
+  background:url("https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") center no-repeat / cover;
+  text-align:center;
+}
+
+#header h1{
+  color: white;
+  text-align:center;
+  font-size:400%
+}
+#header div{
+  display:inline-block;
+  text-align: center;
+  border-top: 3px solid  white;
+  border-bottom: 3px solid  white;
+  width:25%;
+  line-height: 2em;
+  margin:0;
+  color
+}
+#accueil{
+  border-right:3px solid  white;
+}
+#chambres{
+  border-right:3px solid  white;
+}
+#resto{
+  border-right:3px solid  white;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+#principal, #lateral, #footer {border:1px solid;}
+
+#principal, #lateral {
+  display:inline-block; vertical-align:top;
+}
+
+#principal {width:80%;}
+#lateral {width:20%;}
